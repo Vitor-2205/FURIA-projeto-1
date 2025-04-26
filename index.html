@@ -1,0 +1,32 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIA CS Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>FURIA CS Info</h1>
+            <svg class="furia-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Simple approximation of FURIA logo -->
+              <path d="M 10 10 L 50 90 L 90 10 L 70 10 L 50 50 L 30 10 Z" fill="white"/>
+              <path d="M 30 10 L 50 50 L 70 10" fill="none" stroke="#00A8E8" stroke-width="3"/> <!-- Adding a touch of blue often associated -->
+            </svg>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be appended here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

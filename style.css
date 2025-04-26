@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    max-height: 700px;
+    background-color: #000000; /* Black chat area */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3); /* Subtle glow */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.chat-header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+.furia-logo {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+}
+
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+}
+
+/* Webkit scrollbar styles */
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-messages::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 4px;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+  border: 2px solid #222;
+}
+
+
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.message.user {
+    background-color: #007bff; /* Standard user message blue */
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.message.bot {
+    background-color: #333; /* Bot message gray */
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #333;
+    background-color: #111;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    color: white;
+    margin-right: 10px;
+    outline: none;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #00A8E8; /* FURIA-like blue */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+#send-button:hover {
+    background-color: #0086b3; /* Darker blue on hover */
+}
+
